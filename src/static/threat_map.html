@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9885951984583ac4c84e85647a73e70a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9885951984583ac4c84e85647a73e70a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9885951984583ac4c84e85647a73e70a = L.map(
+                "map_9885951984583ac4c84e85647a73e70a",
+                {
+                    center: [28.6139, 77.209],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e11c450ca861eb0284f30481d4dd95b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3e11c450ca861eb0284f30481d4dd95b.addTo(map_9885951984583ac4c84e85647a73e70a);
+        
+    
+            var marker_cluster_11423ee5dc782efd3ec476d004257ea0 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_de029d06762203f5a97a84264d8b6058 = L.circleMarker(
+                [28.57003, 77.34469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_dcfbc3a75d5f367e5fd4188ac979d64a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c8ce6bdcaa611f3ce7b53184461cfd0 = $(`<div id="html_2c8ce6bdcaa611f3ce7b53184461cfd0" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.239<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 00:48:32<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_dcfbc3a75d5f367e5fd4188ac979d64a.setContent(html_2c8ce6bdcaa611f3ce7b53184461cfd0);
+            
+        
+
+        circle_marker_de029d06762203f5a97a84264d8b6058.bindPopup(popup_dcfbc3a75d5f367e5fd4188ac979d64a)
+        ;
+
+        
+    
+    
+            var circle_marker_7e6eef8ad5621d83aae9c135b9975662 = L.circleMarker(
+                [28.69834, 77.24636],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_29df4b38e5ee2098d8b4ed0139f925c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb85becb790d774847e5e4dd23134e7d = $(`<div id="html_cb85becb790d774847e5e4dd23134e7d" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.218<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 00:48:37<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_29df4b38e5ee2098d8b4ed0139f925c9.setContent(html_cb85becb790d774847e5e4dd23134e7d);
+            
+        
+
+        circle_marker_7e6eef8ad5621d83aae9c135b9975662.bindPopup(popup_29df4b38e5ee2098d8b4ed0139f925c9)
+        ;
+
+        
+    
+    
+            var circle_marker_6f242fd8a098ebd8b8d455db7b7d9d21 = L.circleMarker(
+                [28.57911, 77.38589],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_01d753674598d3317cc4b0541be3deca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f94dfa5622c6f575e01678d8c871923f = $(`<div id="html_f94dfa5622c6f575e01678d8c871923f" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.237<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 00:48:38<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_01d753674598d3317cc4b0541be3deca.setContent(html_f94dfa5622c6f575e01678d8c871923f);
+            
+        
+
+        circle_marker_6f242fd8a098ebd8b8d455db7b7d9d21.bindPopup(popup_01d753674598d3317cc4b0541be3deca)
+        ;
+
+        
+    
+    
+            var circle_marker_c33680d4ed534694afd53ecd47ea6e86 = L.circleMarker(
+                [28.45401, 77.26527],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_c5d8e9102d982dba97dfcba7b8c5bccd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38c2ef659872fceab04acda61fc07504 = $(`<div id="html_38c2ef659872fceab04acda61fc07504" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.123<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 00:50:07<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_c5d8e9102d982dba97dfcba7b8c5bccd.setContent(html_38c2ef659872fceab04acda61fc07504);
+            
+        
+
+        circle_marker_c33680d4ed534694afd53ecd47ea6e86.bindPopup(popup_c5d8e9102d982dba97dfcba7b8c5bccd)
+        ;
+
+        
+    
+    
+            var circle_marker_b3bac9aff43552c16408672c7fe198d1 = L.circleMarker(
+                [28.62143, 77.27135],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_6d9f76cec927ef593da0701256700037 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caa08e73ff8c4952e85a0acc9a537c43 = $(`<div id="html_caa08e73ff8c4952e85a0acc9a537c43" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.161<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 00:50:12<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_6d9f76cec927ef593da0701256700037.setContent(html_caa08e73ff8c4952e85a0acc9a537c43);
+            
+        
+
+        circle_marker_b3bac9aff43552c16408672c7fe198d1.bindPopup(popup_6d9f76cec927ef593da0701256700037)
+        ;
+
+        
+    
+    
+            var circle_marker_05e2669634df550f07aefaaebdc70722 = L.circleMarker(
+                [28.52174, 77.12899],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_80d7a62ebb95f4362c51a328c7f6076c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ea8b1f43a9ad53a4d1c1035b3b46d3e = $(`<div id="html_8ea8b1f43a9ad53a4d1c1035b3b46d3e" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.149<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 00:50:13<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_80d7a62ebb95f4362c51a328c7f6076c.setContent(html_8ea8b1f43a9ad53a4d1c1035b3b46d3e);
+            
+        
+
+        circle_marker_05e2669634df550f07aefaaebdc70722.bindPopup(popup_80d7a62ebb95f4362c51a328c7f6076c)
+        ;
+
+        
+    
+    
+            var circle_marker_236baf47aef845a69bff89a2695e04a4 = L.circleMarker(
+                [28.46724, 77.10489],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_d8bc8a94fad97526cf9f55d0aa0fc296 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_654469850e99e5881a2aa5083d953c65 = $(`<div id="html_654469850e99e5881a2aa5083d953c65" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.228<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 00:51:05<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_d8bc8a94fad97526cf9f55d0aa0fc296.setContent(html_654469850e99e5881a2aa5083d953c65);
+            
+        
+
+        circle_marker_236baf47aef845a69bff89a2695e04a4.bindPopup(popup_d8bc8a94fad97526cf9f55d0aa0fc296)
+        ;
+
+        
+    
+    
+            var circle_marker_58ed82e7356193ec8dff216ace9afe7c = L.circleMarker(
+                [28.67727, 77.37831],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_d05b113816ca5ea998ef2c77730f97e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51fffc11e7651b81b01957622f80b1fe = $(`<div id="html_51fffc11e7651b81b01957622f80b1fe" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.49<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 00:51:06<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_d05b113816ca5ea998ef2c77730f97e7.setContent(html_51fffc11e7651b81b01957622f80b1fe);
+            
+        
+
+        circle_marker_58ed82e7356193ec8dff216ace9afe7c.bindPopup(popup_d05b113816ca5ea998ef2c77730f97e7)
+        ;
+
+        
+    
+    
+            var circle_marker_9cf695a500f04628454da30ebf0a3060 = L.circleMarker(
+                [28.61375, 77.20082],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_0fbdd532b2b66a4bd7cf9bd83a3b5e9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be3fe019c07097c92199053ed07b2784 = $(`<div id="html_be3fe019c07097c92199053ed07b2784" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.171<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 00:51:11<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_0fbdd532b2b66a4bd7cf9bd83a3b5e9f.setContent(html_be3fe019c07097c92199053ed07b2784);
+            
+        
+
+        circle_marker_9cf695a500f04628454da30ebf0a3060.bindPopup(popup_0fbdd532b2b66a4bd7cf9bd83a3b5e9f)
+        ;
+
+        
+    
+    
+            var circle_marker_b18665cc2837f40aca81234fc331c25c = L.circleMarker(
+                [28.65714, 77.29595],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_e17b13c5cb7f1b72015a231db9a3d103 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be4d7fc4672bf4d772b7f170772cb9e0 = $(`<div id="html_be4d7fc4672bf4d772b7f170772cb9e0" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.255<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 01:21:14<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_e17b13c5cb7f1b72015a231db9a3d103.setContent(html_be4d7fc4672bf4d772b7f170772cb9e0);
+            
+        
+
+        circle_marker_b18665cc2837f40aca81234fc331c25c.bindPopup(popup_e17b13c5cb7f1b72015a231db9a3d103)
+        ;
+
+        
+    
+    
+            var circle_marker_b358030d568bbf10ab36167799fe86b7 = L.circleMarker(
+                [28.45074, 77.12459],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_5934b873cfcf75626e74ac8feb054849 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d428ff1831d195a57cc45734b03c37e7 = $(`<div id="html_d428ff1831d195a57cc45734b03c37e7" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.125<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 01:21:18<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_5934b873cfcf75626e74ac8feb054849.setContent(html_d428ff1831d195a57cc45734b03c37e7);
+            
+        
+
+        circle_marker_b358030d568bbf10ab36167799fe86b7.bindPopup(popup_5934b873cfcf75626e74ac8feb054849)
+        ;
+
+        
+    
+    
+            var circle_marker_256574c04c0f15ab2491b1ac44701660 = L.circleMarker(
+                [28.45871, 77.254],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_5a05df9f3e5050528c66f5007c9b4ee1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf83b98288aaf1a720122bc1f3d796cf = $(`<div id="html_cf83b98288aaf1a720122bc1f3d796cf" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.195<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 01:21:20<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_5a05df9f3e5050528c66f5007c9b4ee1.setContent(html_cf83b98288aaf1a720122bc1f3d796cf);
+            
+        
+
+        circle_marker_256574c04c0f15ab2491b1ac44701660.bindPopup(popup_5a05df9f3e5050528c66f5007c9b4ee1)
+        ;
+
+        
+    
+    
+            var circle_marker_d3d9a591c69ccd0cc724a0e53ebd67aa = L.circleMarker(
+                [28.42727, 77.00711],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_3b36547b915051c07fdcf0265c2e1920 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0150df58fd847645a2b8fbb51086821e = $(`<div id="html_0150df58fd847645a2b8fbb51086821e" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.255<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 02:08:02<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_3b36547b915051c07fdcf0265c2e1920.setContent(html_0150df58fd847645a2b8fbb51086821e);
+            
+        
+
+        circle_marker_d3d9a591c69ccd0cc724a0e53ebd67aa.bindPopup(popup_3b36547b915051c07fdcf0265c2e1920)
+        ;
+
+        
+    
+    
+            var circle_marker_8138d335c15ba684a5affada32078ac0 = L.circleMarker(
+                [28.57477, 77.21504],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_10f14690bb1c39b176d3d5988ee88425 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a1ed8754a56120470b8836844e3ff85 = $(`<div id="html_9a1ed8754a56120470b8836844e3ff85" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.65<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 02:08:07<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_10f14690bb1c39b176d3d5988ee88425.setContent(html_9a1ed8754a56120470b8836844e3ff85);
+            
+        
+
+        circle_marker_8138d335c15ba684a5affada32078ac0.bindPopup(popup_10f14690bb1c39b176d3d5988ee88425)
+        ;
+
+        
+    
+    
+            var circle_marker_50e8ca5f42e16d23cf44190de3cbbf46 = L.circleMarker(
+                [28.64121, 77.24372],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_172d925576ac93857496ca5c99a0d253 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f90596dd1804f081df4ca5554f86c7b = $(`<div id="html_5f90596dd1804f081df4ca5554f86c7b" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.249<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 02:08:09<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_172d925576ac93857496ca5c99a0d253.setContent(html_5f90596dd1804f081df4ca5554f86c7b);
+            
+        
+
+        circle_marker_50e8ca5f42e16d23cf44190de3cbbf46.bindPopup(popup_172d925576ac93857496ca5c99a0d253)
+        ;
+
+        
+    
+    
+            var circle_marker_2c229d2448a28768d89a90628c15fd28 = L.circleMarker(
+                [28.69504, 77.2472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_9e82bc6d11e9cb4793c0ce0b030e2cb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9162cdabd6add17716419777ae180dda = $(`<div id="html_9162cdabd6add17716419777ae180dda" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.75<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 14:47:20<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_9e82bc6d11e9cb4793c0ce0b030e2cb3.setContent(html_9162cdabd6add17716419777ae180dda);
+            
+        
+
+        circle_marker_2c229d2448a28768d89a90628c15fd28.bindPopup(popup_9e82bc6d11e9cb4793c0ce0b030e2cb3)
+        ;
+
+        
+    
+    
+            var circle_marker_d6f3a75d38b9f2fb2a953243849c3897 = L.circleMarker(
+                [28.58411, 77.04616],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_714c76fa72063ff453eb18ef3a9459b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f49cd420b4aa15dfc6634e597931c7c = $(`<div id="html_3f49cd420b4aa15dfc6634e597931c7c" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.105<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 14:47:25<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_714c76fa72063ff453eb18ef3a9459b4.setContent(html_3f49cd420b4aa15dfc6634e597931c7c);
+            
+        
+
+        circle_marker_d6f3a75d38b9f2fb2a953243849c3897.bindPopup(popup_714c76fa72063ff453eb18ef3a9459b4)
+        ;
+
+        
+    
+    
+            var circle_marker_fead67ab083154508769c9f3c35e6140 = L.circleMarker(
+                [28.68474, 77.372],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_d65aa92316aa65e7d9583602a2119811 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d1f0bd9ca4b6aa04a5d48b83b3a34af = $(`<div id="html_3d1f0bd9ca4b6aa04a5d48b83b3a34af" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.235<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 14:47:27<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_d65aa92316aa65e7d9583602a2119811.setContent(html_3d1f0bd9ca4b6aa04a5d48b83b3a34af);
+            
+        
+
+        circle_marker_fead67ab083154508769c9f3c35e6140.bindPopup(popup_d65aa92316aa65e7d9583602a2119811)
+        ;
+
+        
+    
+    
+            var circle_marker_3a25760a9c36d304b1bbbf4b654543f9 = L.circleMarker(
+                [28.50303, 77.34257],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_bdb85141f499fde4e010354ccc8f8be6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b5ebff05899769fb35bb68e8ec3281e = $(`<div id="html_1b5ebff05899769fb35bb68e8ec3281e" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.10<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 14:54:27<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_bdb85141f499fde4e010354ccc8f8be6.setContent(html_1b5ebff05899769fb35bb68e8ec3281e);
+            
+        
+
+        circle_marker_3a25760a9c36d304b1bbbf4b654543f9.bindPopup(popup_bdb85141f499fde4e010354ccc8f8be6)
+        ;
+
+        
+    
+    
+            var circle_marker_98fc6094f6f5ef9e7bc340541db3918b = L.circleMarker(
+                [28.47266, 77.12783],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_0f9afe8ed272841c2ad7d1c2b6c32f88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50029b48a52a3baa2ecee146d27e2ef7 = $(`<div id="html_50029b48a52a3baa2ecee146d27e2ef7" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.190<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 14:54:31<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_0f9afe8ed272841c2ad7d1c2b6c32f88.setContent(html_50029b48a52a3baa2ecee146d27e2ef7);
+            
+        
+
+        circle_marker_98fc6094f6f5ef9e7bc340541db3918b.bindPopup(popup_0f9afe8ed272841c2ad7d1c2b6c32f88)
+        ;
+
+        
+    
+    
+            var circle_marker_d23f45c81156da8e14c9ce694dea4cbc = L.circleMarker(
+                [28.63337, 77.34679],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_8c35af90d5c2ece087d5cefbd8e86c78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1345ea747b89a05fe74d6facd950ccbd = $(`<div id="html_1345ea747b89a05fe74d6facd950ccbd" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.140<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 14:54:32<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_8c35af90d5c2ece087d5cefbd8e86c78.setContent(html_1345ea747b89a05fe74d6facd950ccbd);
+            
+        
+
+        circle_marker_d23f45c81156da8e14c9ce694dea4cbc.bindPopup(popup_8c35af90d5c2ece087d5cefbd8e86c78)
+        ;
+
+        
+    
+    
+            var circle_marker_4ca208664ce055ad022f25fb21e8620a = L.circleMarker(
+                [28.45935, 77.04242],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_25c05948038a32b35981176c34b14e27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_261df267e8b713616651ad67eb543356 = $(`<div id="html_261df267e8b713616651ad67eb543356" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.175<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 15:38:06<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_25c05948038a32b35981176c34b14e27.setContent(html_261df267e8b713616651ad67eb543356);
+            
+        
+
+        circle_marker_4ca208664ce055ad022f25fb21e8620a.bindPopup(popup_25c05948038a32b35981176c34b14e27)
+        ;
+
+        
+    
+    
+            var circle_marker_7562187724387fa90cdad44babb23dfa = L.circleMarker(
+                [28.54638, 77.30695],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_74320ae1b407312592b443bbfba9bd84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8618c7034cf462baa7319312509cb83 = $(`<div id="html_b8618c7034cf462baa7319312509cb83" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.127<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 15:38:10<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_74320ae1b407312592b443bbfba9bd84.setContent(html_b8618c7034cf462baa7319312509cb83);
+            
+        
+
+        circle_marker_7562187724387fa90cdad44babb23dfa.bindPopup(popup_74320ae1b407312592b443bbfba9bd84)
+        ;
+
+        
+    
+    
+            var circle_marker_892d5cad67098fb79aa62331761d2f70 = L.circleMarker(
+                [28.54532, 77.1733],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_c8210c83280bb90fb2dace6edfdacab0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff53e89f2d1bde8b7e65309cfbb995a0 = $(`<div id="html_ff53e89f2d1bde8b7e65309cfbb995a0" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.87<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 15:38:11<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_c8210c83280bb90fb2dace6edfdacab0.setContent(html_ff53e89f2d1bde8b7e65309cfbb995a0);
+            
+        
+
+        circle_marker_892d5cad67098fb79aa62331761d2f70.bindPopup(popup_c8210c83280bb90fb2dace6edfdacab0)
+        ;
+
+        
+    
+    
+            var circle_marker_4f78edd76311e68613a7447f30b06b73 = L.circleMarker(
+                [28.67943, 77.06497],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_1748af28b339a38604bbe4de3a473538 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e13f54ccadbf11667d3933b0b0da6abe = $(`<div id="html_e13f54ccadbf11667d3933b0b0da6abe" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.120<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 15:46:01<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_1748af28b339a38604bbe4de3a473538.setContent(html_e13f54ccadbf11667d3933b0b0da6abe);
+            
+        
+
+        circle_marker_4f78edd76311e68613a7447f30b06b73.bindPopup(popup_1748af28b339a38604bbe4de3a473538)
+        ;
+
+        
+    
+    
+            var circle_marker_51b563bffd8a422c9988e16348ce8b1a = L.circleMarker(
+                [28.56079, 77.1104],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_5a74e4a4993e6aed412730f79418095e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c10e0baef6aa533fd3ae6c849334c6f9 = $(`<div id="html_c10e0baef6aa533fd3ae6c849334c6f9" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.92<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 15:46:06<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_5a74e4a4993e6aed412730f79418095e.setContent(html_c10e0baef6aa533fd3ae6c849334c6f9);
+            
+        
+
+        circle_marker_51b563bffd8a422c9988e16348ce8b1a.bindPopup(popup_5a74e4a4993e6aed412730f79418095e)
+        ;
+
+        
+    
+    
+            var circle_marker_3ad4c8303b2decbc4042dfeb33b648cf = L.circleMarker(
+                [28.52689, 77.39037],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_2bc4203a14b21eb9acc241826dc07774 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c173d9011b643075a239b5ccb9aa6ba = $(`<div id="html_3c173d9011b643075a239b5ccb9aa6ba" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.168<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 15:46:06<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_2bc4203a14b21eb9acc241826dc07774.setContent(html_3c173d9011b643075a239b5ccb9aa6ba);
+            
+        
+
+        circle_marker_3ad4c8303b2decbc4042dfeb33b648cf.bindPopup(popup_2bc4203a14b21eb9acc241826dc07774)
+        ;
+
+        
+    
+    
+            var circle_marker_00683b01f5e816413a0a441d14015e0b = L.circleMarker(
+                [28.50341, 77.31262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_49b7e6d163e466fbf0574b8522008adf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b665e91e6374bf4d6c938864471d633 = $(`<div id="html_6b665e91e6374bf4d6c938864471d633" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.138<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 15:46:31<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_49b7e6d163e466fbf0574b8522008adf.setContent(html_6b665e91e6374bf4d6c938864471d633);
+            
+        
+
+        circle_marker_00683b01f5e816413a0a441d14015e0b.bindPopup(popup_49b7e6d163e466fbf0574b8522008adf)
+        ;
+
+        
+    
+    
+            var circle_marker_fb084679d46fa2ac6e72840fc658d588 = L.circleMarker(
+                [28.68134, 77.36516],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_0356c708d07842cadc9c444c2dc21192 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d135ca478236fca6876c34367918fa66 = $(`<div id="html_d135ca478236fca6876c34367918fa66" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.56<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 15:46:35<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_0356c708d07842cadc9c444c2dc21192.setContent(html_d135ca478236fca6876c34367918fa66);
+            
+        
+
+        circle_marker_fb084679d46fa2ac6e72840fc658d588.bindPopup(popup_0356c708d07842cadc9c444c2dc21192)
+        ;
+
+        
+    
+    
+            var circle_marker_abdc4d5d457d4c0333a92eefe4e63097 = L.circleMarker(
+                [28.42444, 77.35859],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_acab7b419884c877c6a67569c0fe5255 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_916be14694fc9948057afaf712f0cbd6 = $(`<div id="html_916be14694fc9948057afaf712f0cbd6" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.254<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 15:46:36<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_acab7b419884c877c6a67569c0fe5255.setContent(html_916be14694fc9948057afaf712f0cbd6);
+            
+        
+
+        circle_marker_abdc4d5d457d4c0333a92eefe4e63097.bindPopup(popup_acab7b419884c877c6a67569c0fe5255)
+        ;
+
+        
+    
+    
+            var circle_marker_c2bc824e66dddd88ab14561fb60a1921 = L.circleMarker(
+                [28.4272, 77.3796],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_7cc48314a6cbeaf756506971b2bf8512 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e66a2fd8495ba057f8ce9358effc1c64 = $(`<div id="html_e66a2fd8495ba057f8ce9358effc1c64" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.18<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 15:49:03<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_7cc48314a6cbeaf756506971b2bf8512.setContent(html_e66a2fd8495ba057f8ce9358effc1c64);
+            
+        
+
+        circle_marker_c2bc824e66dddd88ab14561fb60a1921.bindPopup(popup_7cc48314a6cbeaf756506971b2bf8512)
+        ;
+
+        
+    
+    
+            var circle_marker_746f214e6c006096f62197c9922b59af = L.circleMarker(
+                [28.64632, 77.01441],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_42173aa84dfee737c7baaba9ed7abc12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e92d4f6383270e66dbcec4a61facbbf = $(`<div id="html_9e92d4f6383270e66dbcec4a61facbbf" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.171<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 15:49:08<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_42173aa84dfee737c7baaba9ed7abc12.setContent(html_9e92d4f6383270e66dbcec4a61facbbf);
+            
+        
+
+        circle_marker_746f214e6c006096f62197c9922b59af.bindPopup(popup_42173aa84dfee737c7baaba9ed7abc12)
+        ;
+
+        
+    
+    
+            var circle_marker_b6f571ca1c50b3f6db965d79b13a7ea5 = L.circleMarker(
+                [28.595, 77.30745],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_341dd104475058c154884445e4a495cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51e3201c136a41ae228a7b34b5b7a21e = $(`<div id="html_51e3201c136a41ae228a7b34b5b7a21e" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.6<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 15:49:09<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_341dd104475058c154884445e4a495cf.setContent(html_51e3201c136a41ae228a7b34b5b7a21e);
+            
+        
+
+        circle_marker_b6f571ca1c50b3f6db965d79b13a7ea5.bindPopup(popup_341dd104475058c154884445e4a495cf)
+        ;
+
+        
+    
+    
+            var circle_marker_c7fad7b061cdd963e94a7a6a04479682 = L.circleMarker(
+                [28.611, 77.24885],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_24192f813352a08f0d05a77773ec794f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55effd30e12fe883a74847628818fce2 = $(`<div id="html_55effd30e12fe883a74847628818fce2" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.48<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 15:53:20<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_24192f813352a08f0d05a77773ec794f.setContent(html_55effd30e12fe883a74847628818fce2);
+            
+        
+
+        circle_marker_c7fad7b061cdd963e94a7a6a04479682.bindPopup(popup_24192f813352a08f0d05a77773ec794f)
+        ;
+
+        
+    
+    
+            var circle_marker_4feebc14c348fc93ffffe8d9bab456dd = L.circleMarker(
+                [28.47542, 77.24755],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_fdca709c80307556c34b66799a13dbc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a3fcad4633e96454ec8429e0924eba8 = $(`<div id="html_3a3fcad4633e96454ec8429e0924eba8" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.9<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 15:53:25<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_fdca709c80307556c34b66799a13dbc9.setContent(html_3a3fcad4633e96454ec8429e0924eba8);
+            
+        
+
+        circle_marker_4feebc14c348fc93ffffe8d9bab456dd.bindPopup(popup_fdca709c80307556c34b66799a13dbc9)
+        ;
+
+        
+    
+    
+            var circle_marker_2ec317d1d9d230e87948cf96b1e762ca = L.circleMarker(
+                [28.52331, 77.33062],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_87d3ea5545674fe6189df16438f79b3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27419bc53e25e7a763d5168508f80fd8 = $(`<div id="html_27419bc53e25e7a763d5168508f80fd8" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.59<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 15:53:26<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_87d3ea5545674fe6189df16438f79b3d.setContent(html_27419bc53e25e7a763d5168508f80fd8);
+            
+        
+
+        circle_marker_2ec317d1d9d230e87948cf96b1e762ca.bindPopup(popup_87d3ea5545674fe6189df16438f79b3d)
+        ;
+
+        
+    
+    
+            var circle_marker_25222260e85341c940dadf59e10e416d = L.circleMarker(
+                [28.49219, 77.2553],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_6f86b71d19fa9601811750b684c4afa2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea64ebb76fbc177c8df81a4bd06e3a8b = $(`<div id="html_ea64ebb76fbc177c8df81a4bd06e3a8b" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.239<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 15:58:06<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_6f86b71d19fa9601811750b684c4afa2.setContent(html_ea64ebb76fbc177c8df81a4bd06e3a8b);
+            
+        
+
+        circle_marker_25222260e85341c940dadf59e10e416d.bindPopup(popup_6f86b71d19fa9601811750b684c4afa2)
+        ;
+
+        
+    
+    
+            var circle_marker_05d8b356bb92bf2a9100d95eb0a10a1b = L.circleMarker(
+                [28.66226, 77.32531],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_436503749ed4ee57f9f584edb90c9f9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8844792a50b0d5c3eda9377d49c2c9b1 = $(`<div id="html_8844792a50b0d5c3eda9377d49c2c9b1" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.54<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 15:58:10<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_436503749ed4ee57f9f584edb90c9f9b.setContent(html_8844792a50b0d5c3eda9377d49c2c9b1);
+            
+        
+
+        circle_marker_05d8b356bb92bf2a9100d95eb0a10a1b.bindPopup(popup_436503749ed4ee57f9f584edb90c9f9b)
+        ;
+
+        
+    
+    
+            var circle_marker_cd3434ebdb06563e8121e597b8158342 = L.circleMarker(
+                [28.60434, 77.21348],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_114babd034db0a3e975ecd842cb88440 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa4d54ee2e34501872109936eeee63f2 = $(`<div id="html_aa4d54ee2e34501872109936eeee63f2" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.154<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 15:58:12<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_114babd034db0a3e975ecd842cb88440.setContent(html_aa4d54ee2e34501872109936eeee63f2);
+            
+        
+
+        circle_marker_cd3434ebdb06563e8121e597b8158342.bindPopup(popup_114babd034db0a3e975ecd842cb88440)
+        ;
+
+        
+    
+    
+            var circle_marker_b4fcb68af62a2020e330ba3deb5394c8 = L.circleMarker(
+                [28.63581, 77.3036],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_8156ece171ad56e622a6e3ddcc035daa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fedf892f178fcc0c1a26ceb865b50908 = $(`<div id="html_fedf892f178fcc0c1a26ceb865b50908" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.176<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 16:12:23<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_8156ece171ad56e622a6e3ddcc035daa.setContent(html_fedf892f178fcc0c1a26ceb865b50908);
+            
+        
+
+        circle_marker_b4fcb68af62a2020e330ba3deb5394c8.bindPopup(popup_8156ece171ad56e622a6e3ddcc035daa)
+        ;
+
+        
+    
+    
+            var circle_marker_971b85657be086b3bcb0e8655901e91b = L.circleMarker(
+                [28.66904, 77.09364],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_707603f90e04565bae2b82ba7b5f690a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d49c23f9aa65962dccd1c1da2209f443 = $(`<div id="html_d49c23f9aa65962dccd1c1da2209f443" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.180<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 16:12:25<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_707603f90e04565bae2b82ba7b5f690a.setContent(html_d49c23f9aa65962dccd1c1da2209f443);
+            
+        
+
+        circle_marker_971b85657be086b3bcb0e8655901e91b.bindPopup(popup_707603f90e04565bae2b82ba7b5f690a)
+        ;
+
+        
+    
+    
+            var circle_marker_a33618785fcf355c03694ffd6c923ca1 = L.circleMarker(
+                [28.42293, 77.27411],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_0c659c9bf350a49fee37aa7bd47ebae0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4ebb2869acac8fd5217fdb3bd9b9f90 = $(`<div id="html_b4ebb2869acac8fd5217fdb3bd9b9f90" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.91<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 16:12:26<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_0c659c9bf350a49fee37aa7bd47ebae0.setContent(html_b4ebb2869acac8fd5217fdb3bd9b9f90);
+            
+        
+
+        circle_marker_a33618785fcf355c03694ffd6c923ca1.bindPopup(popup_0c659c9bf350a49fee37aa7bd47ebae0)
+        ;
+
+        
+    
+    
+            var circle_marker_998061987e05aa964a4c34b8cd3f8361 = L.circleMarker(
+                [28.5298, 77.35342],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_3b0483e0cf0fd35de25ee5052d671e93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54f4d64907b71dcbad56e53928cd3995 = $(`<div id="html_54f4d64907b71dcbad56e53928cd3995" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.115<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 16:13:29<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_3b0483e0cf0fd35de25ee5052d671e93.setContent(html_54f4d64907b71dcbad56e53928cd3995);
+            
+        
+
+        circle_marker_998061987e05aa964a4c34b8cd3f8361.bindPopup(popup_3b0483e0cf0fd35de25ee5052d671e93)
+        ;
+
+        
+    
+    
+            var circle_marker_deccbbd03dea7312150fc5667bf5ec56 = L.circleMarker(
+                [28.52918, 77.33389],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_372a46b688c5283266079577456fd219 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a110f98a617f13d6aea0710023fcb016 = $(`<div id="html_a110f98a617f13d6aea0710023fcb016" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.213<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 16:13:31<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_372a46b688c5283266079577456fd219.setContent(html_a110f98a617f13d6aea0710023fcb016);
+            
+        
+
+        circle_marker_deccbbd03dea7312150fc5667bf5ec56.bindPopup(popup_372a46b688c5283266079577456fd219)
+        ;
+
+        
+    
+    
+            var circle_marker_63994a67ba4c0bb14acb8140ef53b9e5 = L.circleMarker(
+                [28.56628, 77.38549],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_c4652cbcf738aa7c2b60ff4a9d2b8d9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_141b561e14b89417fdd0f2db5151d5b5 = $(`<div id="html_141b561e14b89417fdd0f2db5151d5b5" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.79<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 16:13:31<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_c4652cbcf738aa7c2b60ff4a9d2b8d9e.setContent(html_141b561e14b89417fdd0f2db5151d5b5);
+            
+        
+
+        circle_marker_63994a67ba4c0bb14acb8140ef53b9e5.bindPopup(popup_c4652cbcf738aa7c2b60ff4a9d2b8d9e)
+        ;
+
+        
+    
+    
+            var circle_marker_4b8dcc767da0f5eb6d9cc9c537e80e64 = L.circleMarker(
+                [28.60978, 77.30331],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_02c7ff46a7eead93a1fc14c82a5aa75d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18431a50c9d856a5564aeb1b5daa96c5 = $(`<div id="html_18431a50c9d856a5564aeb1b5daa96c5" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.54<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 21:41:22<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_02c7ff46a7eead93a1fc14c82a5aa75d.setContent(html_18431a50c9d856a5564aeb1b5daa96c5);
+            
+        
+
+        circle_marker_4b8dcc767da0f5eb6d9cc9c537e80e64.bindPopup(popup_02c7ff46a7eead93a1fc14c82a5aa75d)
+        ;
+
+        
+    
+    
+            var circle_marker_ea0e61387ae21ce61557b149d71a60b7 = L.circleMarker(
+                [28.40042, 77.19823],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_72735d78680276ba1db4ec0b2b2425e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a4d4f6014166125a88fbe9d8c6f8bf3 = $(`<div id="html_1a4d4f6014166125a88fbe9d8c6f8bf3" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.156<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 21:41:27<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_72735d78680276ba1db4ec0b2b2425e8.setContent(html_1a4d4f6014166125a88fbe9d8c6f8bf3);
+            
+        
+
+        circle_marker_ea0e61387ae21ce61557b149d71a60b7.bindPopup(popup_72735d78680276ba1db4ec0b2b2425e8)
+        ;
+
+        
+    
+    
+            var circle_marker_50544506739912c993ef67f8daeba00e = L.circleMarker(
+                [28.53013, 77.38012],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_3cae2998dc2286bfdf26435270194014 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cd196f23d93252177cdc8ea25797a08 = $(`<div id="html_0cd196f23d93252177cdc8ea25797a08" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.88<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 21:41:28<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_3cae2998dc2286bfdf26435270194014.setContent(html_0cd196f23d93252177cdc8ea25797a08);
+            
+        
+
+        circle_marker_50544506739912c993ef67f8daeba00e.bindPopup(popup_3cae2998dc2286bfdf26435270194014)
+        ;
+
+        
+    
+    
+            var circle_marker_944c09c41a911fcf03484e2c6a39de15 = L.circleMarker(
+                [28.41405, 77.30011],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_3af78092a877cc966ee318b19deab3b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1764bc2b71cc6c8d76f61ffea1678df6 = $(`<div id="html_1764bc2b71cc6c8d76f61ffea1678df6" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.138<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-12 22:12:07<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_3af78092a877cc966ee318b19deab3b4.setContent(html_1764bc2b71cc6c8d76f61ffea1678df6);
+            
+        
+
+        circle_marker_944c09c41a911fcf03484e2c6a39de15.bindPopup(popup_3af78092a877cc966ee318b19deab3b4)
+        ;
+
+        
+    
+    
+            var circle_marker_d5182024280e0fc4a29b98d5da27ad64 = L.circleMarker(
+                [28.69868, 77.19404],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_fede60043955f2d746216319947c2e50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47dc1f805da4152059aef91cd5f5a36a = $(`<div id="html_47dc1f805da4152059aef91cd5f5a36a" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.105<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-12 22:12:12<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_fede60043955f2d746216319947c2e50.setContent(html_47dc1f805da4152059aef91cd5f5a36a);
+            
+        
+
+        circle_marker_d5182024280e0fc4a29b98d5da27ad64.bindPopup(popup_fede60043955f2d746216319947c2e50)
+        ;
+
+        
+    
+    
+            var circle_marker_2482e942161b85b0a6a6b000a85caae6 = L.circleMarker(
+                [28.47609, 77.06704],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_f1d80f2f32fcfe1e9a88f480743afd47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bbad4829fed9d5c4e92258a414e4a8a = $(`<div id="html_1bbad4829fed9d5c4e92258a414e4a8a" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.10<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-12 22:12:16<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_f1d80f2f32fcfe1e9a88f480743afd47.setContent(html_1bbad4829fed9d5c4e92258a414e4a8a);
+            
+        
+
+        circle_marker_2482e942161b85b0a6a6b000a85caae6.bindPopup(popup_f1d80f2f32fcfe1e9a88f480743afd47)
+        ;
+
+        
+    
+    
+            var circle_marker_3807b8ef4ddd0beb0d299b4c6e68ad97 = L.circleMarker(
+                [28.6883, 77.15099],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_5943559f1f332bf7ea8120611477fe63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8295fe6a6fb6de504cffc157d18a8735 = $(`<div id="html_8295fe6a6fb6de504cffc157d18a8735" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.186<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-22 02:32:49<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_5943559f1f332bf7ea8120611477fe63.setContent(html_8295fe6a6fb6de504cffc157d18a8735);
+            
+        
+
+        circle_marker_3807b8ef4ddd0beb0d299b4c6e68ad97.bindPopup(popup_5943559f1f332bf7ea8120611477fe63)
+        ;
+
+        
+    
+    
+            var circle_marker_c6384d6a1e12fc7d180074584f47b673 = L.circleMarker(
+                [28.465, 77.18292],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_efa8bc640c593e2b3cda846b2986b5a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00cd675972de867b8ea74cf4fb8e8677 = $(`<div id="html_00cd675972de867b8ea74cf4fb8e8677" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.110<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-22 02:32:51<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_efa8bc640c593e2b3cda846b2986b5a7.setContent(html_00cd675972de867b8ea74cf4fb8e8677);
+            
+        
+
+        circle_marker_c6384d6a1e12fc7d180074584f47b673.bindPopup(popup_efa8bc640c593e2b3cda846b2986b5a7)
+        ;
+
+        
+    
+    
+            var circle_marker_bdeba700571eadb59f47d2e87618b306 = L.circleMarker(
+                [28.48708, 77.12307],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_33b54ef794c3bb7bcb43ecb8caaa0d73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90b4749d64d8b6e32e21ab21e231a5a9 = $(`<div id="html_90b4749d64d8b6e32e21ab21e231a5a9" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.75<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-22 02:32:52<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_33b54ef794c3bb7bcb43ecb8caaa0d73.setContent(html_90b4749d64d8b6e32e21ab21e231a5a9);
+            
+        
+
+        circle_marker_bdeba700571eadb59f47d2e87618b306.bindPopup(popup_33b54ef794c3bb7bcb43ecb8caaa0d73)
+        ;
+
+        
+    
+    
+            var circle_marker_be8ab9c82b0567a12ce35e51f3410b13 = L.circleMarker(
+                [28.59063, 77.39694],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_3d36420dd8fdff7d5b88695cf4c349f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce997a25d6c0883026c6b114b9577c26 = $(`<div id="html_ce997a25d6c0883026c6b114b9577c26" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.145<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-22 02:38:40<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_3d36420dd8fdff7d5b88695cf4c349f3.setContent(html_ce997a25d6c0883026c6b114b9577c26);
+            
+        
+
+        circle_marker_be8ab9c82b0567a12ce35e51f3410b13.bindPopup(popup_3d36420dd8fdff7d5b88695cf4c349f3)
+        ;
+
+        
+    
+    
+            var circle_marker_5813b698036796ed50a18488267119dd = L.circleMarker(
+                [28.68966, 77.06794],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_c76ed2b18e63bd88d99f0762cf689ad1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12d980cbbe9b03467fe5bc5d99d068c9 = $(`<div id="html_12d980cbbe9b03467fe5bc5d99d068c9" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.93<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-22 02:38:41<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_c76ed2b18e63bd88d99f0762cf689ad1.setContent(html_12d980cbbe9b03467fe5bc5d99d068c9);
+            
+        
+
+        circle_marker_5813b698036796ed50a18488267119dd.bindPopup(popup_c76ed2b18e63bd88d99f0762cf689ad1)
+        ;
+
+        
+    
+    
+            var circle_marker_603d941d5cfaf80df780f1de3d6cb52c = L.circleMarker(
+                [28.40484, 77.07243],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_02720371ec7c99cf0a34fe430259bb08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0fa4cf12fae06f732c2fabb282b3e66 = $(`<div id="html_a0fa4cf12fae06f732c2fabb282b3e66" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.28<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-22 02:38:42<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_02720371ec7c99cf0a34fe430259bb08.setContent(html_a0fa4cf12fae06f732c2fabb282b3e66);
+            
+        
+
+        circle_marker_603d941d5cfaf80df780f1de3d6cb52c.bindPopup(popup_02720371ec7c99cf0a34fe430259bb08)
+        ;
+
+        
+    
+    
+            var circle_marker_e6f282414e1499320347fec0e3fa1d5b = L.circleMarker(
+                [28.6926, 77.34853],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_adf46c50a7f326fe6ad9310c5575f151 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad973db30c2050b87dd66c76676fd0ef = $(`<div id="html_ad973db30c2050b87dd66c76676fd0ef" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.209<br>         Confidence: 0.9243000149726868<br>         Timestamp: 2025-07-22 10:57:40<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_adf46c50a7f326fe6ad9310c5575f151.setContent(html_ad973db30c2050b87dd66c76676fd0ef);
+            
+        
+
+        circle_marker_e6f282414e1499320347fec0e3fa1d5b.bindPopup(popup_adf46c50a7f326fe6ad9310c5575f151)
+        ;
+
+        
+    
+    
+            var circle_marker_3fc82ada3973d40fe8639d7046af8824 = L.circleMarker(
+                [28.55763, 77.27816],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_1c23d9676263362308c7f4aced39b759 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1ce6a9dc8dbafbc9b2281fe3b01ee55 = $(`<div id="html_f1ce6a9dc8dbafbc9b2281fe3b01ee55" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.116<br>         Confidence: 0.5950999855995178<br>         Timestamp: 2025-07-22 10:57:41<br>         Action: Alerted and Logged + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_1c23d9676263362308c7f4aced39b759.setContent(html_f1ce6a9dc8dbafbc9b2281fe3b01ee55);
+            
+        
+
+        circle_marker_3fc82ada3973d40fe8639d7046af8824.bindPopup(popup_1c23d9676263362308c7f4aced39b759)
+        ;
+
+        
+    
+    
+            var circle_marker_5f7098b768256651fb6d7e246b8603ca = L.circleMarker(
+                [28.6057, 77.35921],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_11423ee5dc782efd3ec476d004257ea0);
+        
+    
+        var popup_5a68bf7bbbd26f448bc8eede6a69b1cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48b57184e2315404a62cfc2e1ba7fb30 = $(`<div id="html_48b57184e2315404a62cfc2e1ba7fb30" style="width: 100.0%; height: 100.0%;">         <strong>Predicted Threat</strong><br>         IP: 192.168.1.12<br>         Confidence: 0.9126999974250792<br>         Timestamp: 2025-07-22 10:57:42<br>         Action: Alerted and Logged + Quarantined + Firewall Rule Applied + SMS/API Alert Sent + Simulated IP Block         </div>`)[0];
+                popup_5a68bf7bbbd26f448bc8eede6a69b1cb.setContent(html_48b57184e2315404a62cfc2e1ba7fb30);
+            
+        
+
+        circle_marker_5f7098b768256651fb6d7e246b8603ca.bindPopup(popup_5a68bf7bbbd26f448bc8eede6a69b1cb)
+        ;
+
+        
+    
+    
+            marker_cluster_11423ee5dc782efd3ec476d004257ea0.addTo(map_9885951984583ac4c84e85647a73e70a);
+        
+</script>
+</html>

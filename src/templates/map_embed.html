@@ -1,0 +1,14 @@
+<!-- templates/map_embed.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Threat Map</title>
+  <meta http-equiv="refresh" content="60"> <!-- Auto-refresh every 60 sec -->
+</head>
+<body>
+  <h3 style="text-align:center;">🗺️ Threat Map (Updated Live)</h3>
+  <iframe src="{{ url_for('static', filename='threat_map.html') }}"
+          width="100%" height="600px" frameborder="0">
+  </iframe>
+</body>
+</html>
